@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.tip span {
+  color: #ffff00;
+}
+
 .word_container {
   display: flex;
   margin: 1.5rem;

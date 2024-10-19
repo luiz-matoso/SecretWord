@@ -1,19 +1,35 @@
 import styles from "./GameScreen.module.css";
 
-const GameScreen = ({ processInput }) => {
+const GameScreen = ({
+  processInput,
+  pickedWord,
+  pickedCategory,
+  letters,
+  guessedLetters,
+  wrongLetters,
+  guesses,
+  score,
+}) => {
   return (
     <div className={styles.game}>
       <p className={styles.points}>
-        <span>Pontuation: 000</span>
+        <span>Pontuation: {score}</span>
       </p>
       <h1>Do you know the word?</h1>
       <h3 className={styles.tip}>
-        Word tip: <span>Tip......</span>
+        Word tip: <span>{pickedCategory}</span>
       </h3>
-      <p>You stiil have XXX attemps</p>
+      <p>You stiil have {guesses} attemps</p>
       <div className={styles.word_container}>
-        <span className={styles.letter}>A</span>
-        <span className={styles.blank_square}></span>
+        {letters.map((letter, i) =>
+          guessedLetters.includes(letter) ? (
+            <span key={i} className={styles.letter}>
+              {letter}
+            </span>
+          ) : (
+            <span key={i} className={styles.blank_square}></span>
+          )
+        )}
       </div>
       <div className={styles.letter_container}>
         <p>Guess the word letter: </p>
@@ -24,9 +40,9 @@ const GameScreen = ({ processInput }) => {
       </div>
       <div className={styles.wrong_letter_container}>
         <p>Used letters:</p>
-        <span>a, </span>
-        <span>b, </span>
-        <span>c, </span>
+        {wrongLetters.map((letter, i) => (
+          <span key={i}>{letter}, </span>
+        ))}
       </div>
     </div>
   );
