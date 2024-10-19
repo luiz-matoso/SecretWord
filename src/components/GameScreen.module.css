@@ -1,8 +1,53 @@
-.gameScreen button {
+.game h1 {
+  font-size: 2.5rem;
+}
+
+.points span {
+  font-weight: bold;
+}
+
+.word_container {
+  display: flex;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 20px solid #ffff00;
+}
+
+.letter,
+.blank_square {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  width: 100px;
+  height: 100px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-weight: bolder;
+}
+
+.letter_container {
+  margin-bottom: 1.2rem;
+}
+
+.letter_container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter_container input {
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.game button {
   outline: none;
   border: 0;
   padding: 0.8rem;
-  margin-top: 2rem;
   cursor: pointer;
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
