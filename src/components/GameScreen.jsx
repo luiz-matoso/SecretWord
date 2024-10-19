@@ -29,7 +29,7 @@ const GameScreen = ({
       <p className={styles.points}>
         <span>Pontuation: {score}</span>
       </p>
-      <h1>Do you know the word?</h1>
+      <h1>Do you know the word? (Portuguese)</h1>
       <h3 className={styles.tip}>
         Word tip: <span>{pickedCategory}</span>
       </h3>

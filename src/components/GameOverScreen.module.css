@@ -1,3 +1,17 @@
+.gameOverScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h2 span {
+  color: #ffff00;
+  font-size: 2rem;
+}
+
 .gameOverScreen button {
   outline: none;
   border: 0;

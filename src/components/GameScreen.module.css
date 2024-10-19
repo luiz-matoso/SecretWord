@@ -1,5 +1,18 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 .game h1 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.points {
+  font-size: 1.6rem;
 }
 
 .points span {

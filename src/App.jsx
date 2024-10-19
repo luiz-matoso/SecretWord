@@ -135,9 +135,12 @@ function App() {
           guessedLetters={guessedLetters}
           wrongLetters={wrongLetters}
           guesses={guesses}
+          score={score}
         />
       )}
-      {gameStage === "gameover" && <GameOverScreen restartGame={restartGame} />}
+      {gameStage === "gameover" && (
+        <GameOverScreen restartGame={restartGame} score={score} />
+      )}
     </>
   );
 }
