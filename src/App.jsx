@@ -67,8 +67,8 @@ function App() {
   };
 
   // Process input
-  const processInput = () => {
-    setGameStage(stages[2].name);
+  const processInput = (letter) => {
+    console.log(letter);
   };
 
   // Restart game
