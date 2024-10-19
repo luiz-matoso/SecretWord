@@ -1,7 +1,12 @@
 import styles from "./GameOverScreen.module.css";
 
-const GameoverScreen = () => {
-  return <div>GameoverScreen</div>;
+const GameOverScreen = ({ restartGame }) => {
+  return (
+    <div className={styles.gameOverScreen}>
+      <h1>Game Over</h1>
+      <button onClick={restartGame}>Restart game</button>
+    </div>
+  );
 };
 
-export default GameoverScreen;
+export default GameOverScreen;

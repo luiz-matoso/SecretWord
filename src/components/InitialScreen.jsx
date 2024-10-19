@@ -1,6 +1,6 @@
 import styles from "./InitialScreen.module.css";
 
-const InitialScreen = () => {
+const InitialScreen = ({ startGame }) => {
   return (
     <div className={styles.initialScreen}>
       <div>
@@ -8,7 +8,7 @@ const InitialScreen = () => {
         <h1>Word</h1>
         <p>Click in the button "Play" to start playing.</p>
       </div>
-      <button>Play</button>
+      <button onClick={startGame}>Play</button>
     </div>
   );
 };
