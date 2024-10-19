@@ -60,9 +60,6 @@ function App() {
 
     wordLetters = wordLetters.map((l) => l.toLowerCase());
 
-    console.log(word, category);
-    console.log(wordLetters);
-
     // Set States
     setPickedWord(word);
     setPickedCategory(category);
@@ -99,9 +96,6 @@ function App() {
 
       setGuesses((actualGuesses) => actualGuesses - 1);
     }
-
-    console.log(guessedLetters);
-    console.log(wrongLetters);
   };
 
   const clearLetterStates = () => {
@@ -131,7 +125,6 @@ function App() {
       // Restart Game with another word
       startGame();
     }
-    console.log(uniqueLetters);
   }, [guessedLetters]);
 
   // Restart game
