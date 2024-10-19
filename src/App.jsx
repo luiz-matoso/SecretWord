@@ -118,7 +118,10 @@ function App() {
     const uniqueLetters = [...new Set(letters)];
 
     // Win condition
-    if (guessedLetters.length === uniqueLetters.length) {
+    if (
+      guessedLetters.length === uniqueLetters.length &&
+      guessedLetters.length > 1
+    ) {
       // Add score
       setScore((acutalScore) => (acutalScore += 100));
 
